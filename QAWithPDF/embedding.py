@@ -19,7 +19,7 @@ def download_gemini_embedding(model,document):
     """
     try:
         logging.info("")
-        gemini_embed_model = GeminiEmbedding(model_name="models/embedding-001")
+        gemini_embed_model = GeminiEmbedding(model_name="models/embedding-001", api_key=GOOGLE_API_KEY)
         service_context = ServiceContext.from_defaults(llm=model,embed_model=gemini_embed_model, chunk_size=800, chunk_overlap=20)
         
         logging.info("")
