@@ -11,7 +11,7 @@ from exception import customexception
 from logger import logging
 import os
 import streamlit as st
-
+import google.generativeai as genai
 
 GOOGLE_API_KEY=os.getenv(st.secrets['gapi'])
 
