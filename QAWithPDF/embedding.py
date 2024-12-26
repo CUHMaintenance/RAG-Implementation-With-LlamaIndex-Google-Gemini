@@ -11,7 +11,6 @@ from exception import customexception
 from logger import logging
 
 
-load_dotenv()
 
 GOOGLE_API_KEY=os.getenv(st.secrets['gapi'])
 
