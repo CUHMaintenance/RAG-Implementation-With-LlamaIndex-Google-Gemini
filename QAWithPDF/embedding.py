@@ -9,7 +9,8 @@ from QAWithPDF.model_api import load_model
 import sys
 from exception import customexception
 from logger import logging
-
+import os
+import streamlit as st
 
 
 GOOGLE_API_KEY=os.getenv(st.secrets['gapi'])
