@@ -1,6 +1,7 @@
 import os
 from dotenv import load_dotenv
 import sys
+import streamlit as st
 
 from llama_index.llms.gemini import Gemini
 from IPython.display import Markdown, display
