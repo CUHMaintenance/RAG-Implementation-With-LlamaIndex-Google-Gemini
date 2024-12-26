@@ -10,6 +10,13 @@ import sys
 from exception import customexception
 from logger import logging
 
+
+load_dotenv()
+
+GOOGLE_API_KEY=os.getenv(st.secrets['gapi'])
+
+genai.configure(api_key=GOOGLE_API_KEY)
+
 def download_gemini_embedding(model,document):
     """
     Downloads and initializes a Gemini Embedding model for vector embeddings.
